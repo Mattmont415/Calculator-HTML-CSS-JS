@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Master Calculator!</title>
+        <link rel = "stylesheet" type = "text/css" href = "style.css" />
+    </head>
+
+
+
+    <body>
+        <h1></h1>
+        
+        <!-- This is where the fun begins!-->
+        <div id="container">
+            <div id="display">
+                <div class="expression"></div>
+                <div class="result">0</div>
+            </div>
+
+            <div id="btnContainer">
+                <!--Take ASCII values for buttons-->
+                <button class="digits" type="button" name="seven" value="7">7</button>
+                <button class="digits" type="button" name="eight" value="8">8</button>
+                <button class="digits" type="button" name="nine" value="9">9</button>
+                <button class="operators" type="button" name="div" value="/">÷</button>
+                <button class="digits" type="button" name="four" value="4">4</button>
+                <button class="digits" type="button" name="five" value="5">5</button>
+                <button class="digits" type="button" name="six" value="6">6</button>
+                <button class="operators" type="button" name="mul" value="x">×</button>
+                <button class="digits" type="button" name="one" value="1">1</button>
+                <button class="digits" type="button" name="two" value="2">2</button>
+                <button class="digits" type="button" name="three" value="3">3</button>
+                <button class="operators" type="button" name="sub" value="-">-</button>
+                <button class="digits" type="button" name="zero" value="0">0</button>
+                <button class="digits" type="button" name="point" value=".">.</button>
+                <button class="negative" type="button" name="negative" value="+-">+/-</button>
+                <button class="operators" type="button" name="sum" value="+">+</button>
+                <button class="clear" type="button" name="clear" id="clear">Clr</button>
+                <button class="backspace" type="button" name="backspace">
+                    <svg height="50px" width="50px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="backspace" class="svg-inline--fa fa-backspace fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M576 64H205.26A63.97 63.97 0 0 0 160 82.75L9.37 233.37c-12.5 12.5-12.5 32.76 0 45.25L160 429.25c12 12 28.28 18.75 45.25 18.75H576c35.35 0 64-28.65 64-64V128c0-35.35-28.65-64-64-64zm-84.69 254.06c6.25 6.25 6.25 16.38 0 22.63l-22.62 22.62c-6.25 6.25-16.38 6.25-22.63 0L384 301.25l-62.06 62.06c-6.25 6.25-16.38 6.25-22.63 0l-22.62-22.62c-6.25-6.25-6.25-16.38 0-22.63L338.75 256l-62.06-62.06c-6.25-6.25-6.25-16.38 0-22.63l22.62-22.62c6.25-6.25 16.38-6.25 22.63 0L384 210.75l62.06-62.06c6.25-6.25 16.38-6.25 22.63 0l22.62 22.62c6.25 6.25 6.25 16.38 0 22.63L429.25 256l62.06 62.06z"></path></svg>   
+                  </button>
+
+                <button class="equal" type="button" name="equal" id="equal">=</button>
+            </div>
+
+        </div>
+        
+    </body>
+
+    <script type="text/javascript" src="javascript.js"></script>
+</html>

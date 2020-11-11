@@ -1,0 +1,100 @@
+body {
+    background-color: rgb(12, 12, 92);
+    font-family: courier;
+}
+
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height : 600px;
+    width : 400px;
+    /*Negative margins good cross-browser support*/
+    margin: -300px 0 0 -200px;
+    padding: 12px;
+    border-radius: 20px;
+    background: radial-gradient(circle, rgb(238, 25, 117) 10%, rgb(137, 10, 196) 90%);
+    box-shadow: 25px 25px 40px red;
+}
+
+#display {
+    position: relative;
+    margin: auto;
+    top: 15px;
+    height: 150px;
+    width: 360px;
+    border-radius: 15px;
+    padding: 2px;
+    background-color: black;
+    font-weight: bolder;
+    color: rgb(222, 235, 113);
+}
+.expression {
+    top: 10px;
+    padding: 10px;
+    font-size: 30px;
+    float: left;
+}
+.result {
+    position: absolute;
+    font-size: 40px;
+    bottom: 8px;
+    right: 8px;
+    float: right;
+}
+
+
+#btnContainer {
+    position: relative;
+    top: 15px;
+    margin: 10px;
+    width: auto;
+    height: 380px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+}
+
+button {
+    color: rgb(19, 117, 44);
+    font-weight: bolder;
+    font-size: 22px;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: greenyellow;
+    border: none;
+    box-shadow: 5px 7px 10px blue;
+    outline: none;
+}
+
+button:hover {
+    background-color: goldenrod;
+    cursor: pointer;
+}
+button:active {
+    background-color: red;
+    border-radius: 24px;
+    transform-origin: 10px;
+    transform: translateY(8px);
+    border: none;
+}
+#equal{
+    background-color: rgb(26, 231, 187);
+    grid-column: 3 / span 2;
+    width: 150px;
+    border-radius: 15px;
+    padding: 0px;
+}
+#equal:hover {
+    background-color: rgb(8, 133, 126);
+    cursor: pointer;
+}
+#equal:active {
+    background-color: rgb(31, 66, 63);
+    border-radius: 24px;
+    transform-origin: 10px;
+    transform: translateY(8px);
+    border: none;
+}
