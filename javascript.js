@@ -5,14 +5,14 @@ function Calculator() {
     this.binaryOperator = 'true';
     
     this.updateView = function(char) { 
-      if(char == '.' && (this.curOperand.includes('.')  || this.curOperand == '')) // prevent leading '.' and multiple '.'
+      if (char == '.' && (this.curOperand.includes('.')  || this.curOperand == '')) // prevent leading '.' and multiple '.'
         return;
-      if(Number.isInteger(Number(char)) && this.curOperand[0] == '0' && !this.curOperand.includes('.') ) // prevent leading zeros  
+      if (Number.isInteger(Number(char)) && this.curOperand[0] == '0' && !this.curOperand.includes('.') ) // prevent leading zeros  
         return;
-      if(this.curOperand.length >= 15) 
+      if (this.curOperand.length >= 15) 
         return;
 
-      if(this.curOperand.length > 0) {
+      if (this.curOperand.length > 0) {
 
           this.prevOperand = '';
       }
